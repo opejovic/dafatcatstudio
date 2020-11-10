@@ -8,7 +8,7 @@
       justify-content: center;
     "
   >
-    <div>
+    <div data-animate-in="up" id="main">
       <div>
         <svg
           width="170"
@@ -83,43 +83,40 @@
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    setTimeout(() => {
+      const main = document.getElementById("main");
+      main.classList.add("in-view");
+    }, 300);
+  },
+};
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
+[data-animate-in] {
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
 }
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+[data-animate-in="up"] {
+  transform: translate3d(0, 12px, 0);
 }
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+[data-animate-in="left"] {
+  transform: translate3d(-25%, 0, 0);
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+[data-animate-in="right"] {
+  transform: translate3d(25%, 0, 0);
 }
-
-.links {
-  padding-top: 15px;
+[data-animate-in="down"] {
+  transform: translate3d(0, -12px, 0);
+}
+[data-animate-in="fade"] {
+  transform: translate3d(0, 0, 0);
+}
+[data-animate-in].in-view {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transition: transform 0.6s ease, opacity 0.6s ease;
 }
 </style>
