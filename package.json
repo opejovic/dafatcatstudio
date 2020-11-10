@@ -1,0 +1,23 @@
+{
+  "name": "dafatcatstudio",
+  "version": "1.0.0",
+  "description": "Digital development and design agency.",
+  "author": "ognjen pejovic",
+  "private": true,
+  "scripts": {
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.1.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.3"
+  }
+}
