@@ -3,7 +3,7 @@ export default {
   target: 'static',
   mode: 'spa',
   router: {
-    base: '/dafatcatstudio/'
+    base: '/'
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
