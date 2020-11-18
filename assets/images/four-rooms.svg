@@ -1,0 +1,108 @@
+<svg
+            width="275"
+            height="275"
+            viewBox="0 0 275 275"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M147.625 127.529V43.2257H231.928V127.529H147.625Z"
+              fill="#FFEA7B"
+              fill-opacity="0.2"
+            />
+            <path
+              d="M189.776 85.3773V1.07422H274.079V85.3773H189.776Z"
+              fill="#FFEA7B"
+              fill-opacity="0.2"
+            />
+            <path
+              d="M189.776 85.3773V1.07422H274.079V85.3773H189.776Z"
+              fill="#FFEA7B"
+              fill-opacity="0.2"
+            />
+            <path
+              d="M147.625 43.2257V127.529M147.625 43.2257H231.928M147.625 43.2257L189.776 1.07422M147.625 127.529H231.928M147.625 127.529L189.776 85.3773M231.928 127.529V43.2257M231.928 127.529L274.079 85.3773M231.928 43.2257L274.079 1.07422M274.079 1.07422V85.3773M274.079 1.07422H189.776M189.776 1.07422V85.3773M189.776 85.3773H274.079"
+              stroke="white"
+              stroke-opacity="0.5"
+              stroke-width="1.78105"
+              stroke-miterlimit="2.3662"
+              stroke-linecap="round"
+              stroke-linejoin="bevel"
+              stroke-dasharray="7.12 7.12"
+            />
+            <path
+              d="M1 273.575V189.272H85.303V273.575H1Z"
+              fill="#3400C7"
+              fill-opacity="0.2"
+            />
+            <path
+              d="M43.1515 231.423V147.12H127.455V231.423H43.1515Z"
+              fill="#3400C7"
+              fill-opacity="0.2"
+            />
+            <path
+              d="M43.1515 231.423V147.12H127.455V231.423H43.1515Z"
+              fill="#3400C7"
+              fill-opacity="0.2"
+            />
+            <path
+              d="M1 189.272V273.575M1 189.272H85.303M1 189.272L43.1515 147.12M1 273.575H85.303M1 273.575L43.1515 231.423M85.303 273.575V189.272M85.303 273.575L127.455 231.423M85.303 189.272L127.455 147.12M127.455 147.12V231.423M127.455 147.12H43.1515M43.1515 147.12V231.423M43.1515 231.423H127.455"
+              stroke="white"
+              stroke-opacity="0.5"
+              stroke-width="1.78105"
+              stroke-miterlimit="2.3662"
+              stroke-linecap="round"
+              stroke-linejoin="bevel"
+              stroke-dasharray="7.12 7.12"
+            />
+            <path
+              d="M127.455 127.53V43.2267H43.1515V127.53H127.455Z"
+              fill="#FB406D"
+              fill-opacity="0.19"
+            />
+            <path
+              d="M85.303 85.3782V1.0752H1V85.3782H85.303Z"
+              fill="#FB406D"
+              fill-opacity="0.19"
+            />
+            <path
+              d="M85.303 85.3782V1.0752H1V85.3782H85.303Z"
+              fill="#FB406D"
+              fill-opacity="0.19"
+            />
+            <path
+              d="M127.455 43.2267V127.53M127.455 43.2267H43.1515M127.455 43.2267L85.303 1.0752M127.455 127.53H43.1515M127.455 127.53L85.303 85.3782M43.1515 127.53V43.2267M43.1515 127.53L1 85.3782M43.1515 43.2267L1 1.0752M1 1.0752V85.3782M1 1.0752H85.303M85.303 1.0752V85.3782M85.303 85.3782H1"
+              stroke="white"
+              stroke-opacity="0.5"
+              stroke-width="1.80614"
+              stroke-miterlimit="2.3662"
+              stroke-linecap="round"
+              stroke-linejoin="bevel"
+              stroke-dasharray="7.12 7.12"
+            />
+            <path
+              d="M274.079 273.575V189.272H189.776V273.575H274.079Z"
+              fill="#00BE91"
+              fill-opacity="0.2"
+            />
+            <path
+              d="M231.928 231.423V147.12H147.625V231.423H231.928Z"
+              fill="#00BE91"
+              fill-opacity="0.2"
+            />
+            <path
+              d="M231.928 231.423V147.12H147.625V231.423H231.928Z"
+              fill="#00BE91"
+              fill-opacity="0.2"
+            />
+            <path
+              d="M274.079 189.272V273.575M274.079 189.272H189.776M274.079 189.272L231.928 147.12M274.079 273.575H189.776M274.079 273.575L231.928 231.423M189.776 273.575V189.272M189.776 273.575L147.625 231.423M189.776 189.272L147.625 147.12M147.625 147.12V231.423M147.625 147.12H231.928M231.928 147.12V231.423M231.928 231.423H147.625"
+              stroke="white"
+              stroke-opacity="0.5"
+              stroke-width="1.80614"
+              stroke-miterlimit="2.3662"
+              stroke-linecap="round"
+              stroke-linejoin="bevel"
+              stroke-dasharray="7.12 7.12"
+            />
+          </svg>
