@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Aktifo-Bold";
+  src: local("Aktifo-Bold"),
+    url(~assets/base/fonts/Aktifo-B-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "aktifo";
+  src: local("Aktifo-Book"),
+    url(~assets/base/fonts/Aktifo-B-Book.otf) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aktifo-Light";
+  src: local("Aktifo-Light"),
+    url(~assets/base/fonts/Aktifo-B-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "aktifo";
+  src: local("Aktifo-SemiBold"),
+    url(~assets/base/fonts/Aktifo-B-SemiBold.otf) format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}

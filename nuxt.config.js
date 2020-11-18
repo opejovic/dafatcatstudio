@@ -3,7 +3,8 @@ export default {
   target: 'static',
   mode: 'spa',
   router: {
-    base: '/'
+    base: '/',
+    services: '/services'
   },
 
   //
@@ -21,8 +22,12 @@ export default {
     ]
   },
 
+  loading: { color: '#bca1f7', height: '2px', throttle: 0 },
+  router: {
+    linkExactActiveClass: "exact-active-link",
+  },
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['~assets/fonts.css'],
+  css: ['~assets/index.scss'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
