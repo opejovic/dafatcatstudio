@@ -7,6 +7,7 @@
     <nav class="space-x-8">
       <NuxtLink to="/services">· services</NuxtLink>
       <!-- <NuxtLink to="/our-work">· our work</NuxtLink> -->
+      <!-- <NuxtLink to="/our-work">· team</NuxtLink> -->
     </nav>
   </div>
 </template>
