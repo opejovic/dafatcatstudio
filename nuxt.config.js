@@ -23,6 +23,7 @@ export default {
   },
 
   loading: { color: '#bca1f7', height: '2px', throttle: 0 },
+
   router: {
     linkExactActiveClass: "exact-active-link",
   },
