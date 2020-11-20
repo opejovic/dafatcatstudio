@@ -1,7 +1,7 @@
 <template>
   <div id="main" data-animate-in="fade" class="bg-gradient center">
     <img
-      class="py-12"
+      class="py-44"
       id="comming-soon"
       data-animate-in="fade"
       src="../assets/images/comming-soon.svg"
