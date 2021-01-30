@@ -294,7 +294,7 @@
           </section>
         </main>
         <footer>
-          <div class="hidden md:block flex justify-between items-end relative">
+          <div class="hidden md:flex justify-between items-end relative">
             <svg
               id="box1"
               data-animate-in="left"

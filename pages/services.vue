@@ -150,8 +150,8 @@
               "
               class="py-10 xl:py-16 border-l pl-4 text-justify text-xl xl:text-2xl"
             >
-              We are a small creative studio based in Montenegro. We specialize
-              in digital design, website development, UX and UI. We offer the
+              We are a tiny creative studio based in Montenegro. We specialize
+              in website development, UX/UI and digital design. We offer the
               skills and experience of an agency without the overheads and
               markup. We only take one client at a time.
             </p>
@@ -242,7 +242,7 @@
           <section class="hidden lg:block">
             <svg
               id="topbox"
-              data-animate-in="down"
+              data-animate-in="fade"
               class="ml-auto"
               width="96"
               height="96"
@@ -263,7 +263,7 @@
 
             <svg
               id="threeboxes"
-              data-animate-in="up"
+              data-animate-in="fade"
               width="190"
               height="362"
               viewBox="0 0 190 362"
@@ -301,7 +301,7 @@
           </section>
         </main>
         <footer>
-          <div class="flex justify-between items-end">
+          <div class="flex justify-between items-end mt-4">
             <a href="#">hello@dafatcat.studio</a>
             <svg
               class="hidden md:block"
@@ -338,11 +338,11 @@ export default {
     setTimeout(() => {
       const topbox = document.getElementById("topbox");
       topbox.classList.add("in-view");
-    }, 500);
+    }, 600);
     setTimeout(() => {
       const threeboxes = document.getElementById("threeboxes");
       threeboxes.classList.add("in-view");
-    }, 500);
+    }, 800);
   },
 };
 </script>
