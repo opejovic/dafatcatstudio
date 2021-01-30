@@ -1,5 +1,5 @@
 <template>
-  <div id="main" data-animate-in="fade" class="bg-gradient center">
+  <div id="main" data-animate-in="fade" class="center">
     <img
       class="hidden lg:block absolute w-full"
       style="bottom: 15%"
