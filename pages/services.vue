@@ -1,12 +1,5 @@
 <template>
-  <div id="main" data-animate-in="fade" class="bg-gradient center">
-    <img
-      class="hidden lg:block absolute w-full"
-      style="bottom: 15%"
-      id="comming-soon"
-      src="../assets/images/landing-line-bottom.svg"
-      alt=""
-    />
+  <div style="background-color: #141618">
     <div style="max-width: 1440px" class="text-white antialiased mx-auto">
       <div
         class="px-10 py-5 md:py-dfc-50 md:px-dfc-100 flex flex-col min-h-screen w-full"
@@ -59,8 +52,7 @@
               stroke-width="0.939597"
             />
           </svg>
-
-          <!-- logo md  -->
+          <!-- logo md -->
           <svg
             class="hidden md:block"
             width="250"
@@ -109,25 +101,31 @@
           </svg>
 
           <nav class="flex items-center space-x-6">
-            <svg
-              class="opacity-0"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
+            <NuxtLink
+              id="back"
+              data-animate-in="fade"
+              to="/"
+              class="hover:text-purple-400 focus:text-purple-400 transition duration-300"
             >
-              <path
-                d="M12.0001 23.6467C5.57656 23.6467 0.353027 18.4231 0.353027 11.9996C0.353027 5.57607 5.57656 0.352539 12.0001 0.352539C18.4236 0.352539 23.6471 5.57607 23.6471 11.9996C23.6471 18.4231 18.4236 23.6467 12.0001 23.6467ZM12.0001 1.05842C6.00009 1.05842 1.05891 5.9996 1.05891 11.9996C1.05891 17.9996 6.00009 22.9408 12.0001 22.9408C18.0001 22.9408 22.9413 17.9996 22.9413 11.9996C22.9413 5.9996 18.0001 1.05842 12.0001 1.05842Z"
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
                 fill="currentColor"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M11.1529 7.05921C10.9411 6.84745 10.5882 6.84745 10.3764 7.05921L5.92933 11.5063C5.71757 11.718 5.71757 12.071 5.92933 12.2827L10.3764 16.6592C10.5882 16.871 10.9411 16.871 11.1529 16.6592C11.3646 16.4475 11.3646 16.0945 11.1529 15.8827L7.62345 12.3533H17.7882C18.0705 12.3533 18.3529 12.1416 18.3529 11.7886C18.3529 11.4357 18.1411 11.2945 17.7882 11.2945H7.62345L11.1529 7.7651C11.3646 7.55333 11.3646 7.27098 11.1529 7.05921Z"
-                fill="currentColor"
-              />
-            </svg>
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.0001 23.6467C5.57656 23.6467 0.353027 18.4231 0.353027 11.9996C0.353027 5.57607 5.57656 0.352539 12.0001 0.352539C18.4236 0.352539 23.6471 5.57607 23.6471 11.9996C23.6471 18.4231 18.4236 23.6467 12.0001 23.6467ZM12.0001 1.05842C6.00009 1.05842 1.05891 5.9996 1.05891 11.9996C1.05891 17.9996 6.00009 22.9408 12.0001 22.9408C18.0001 22.9408 22.9413 17.9996 22.9413 11.9996C22.9413 5.9996 18.0001 1.05842 12.0001 1.05842Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.1529 7.05921C10.9411 6.84745 10.5882 6.84745 10.3764 7.05921L5.92933 11.5063C5.71757 11.718 5.71757 12.071 5.92933 12.2827L10.3764 16.6592C10.5882 16.871 10.9411 16.871 11.1529 16.6592C11.3646 16.4475 11.3646 16.0945 11.1529 15.8827L7.62345 12.3533H17.7882C18.0705 12.3533 18.3529 12.1416 18.3529 11.7886C18.3529 11.4357 18.1411 11.2945 17.7882 11.2945H7.62345L11.1529 7.7651C11.3646 7.55333 11.3646 7.27098 11.1529 7.05921Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </NuxtLink>
             <NuxtLink
               to="/services"
               class="hover:text-purple-400 focus:text-purple-400 transition duration-300"
@@ -136,157 +134,177 @@
           </nav>
         </header>
 
-        <main class="flex-grow flex justify-between items-center">
-          <section>
-            <!-- font-size: 85px; -->
-            <!-- line-height: 100%; -->
+        <main
+          class="flex-grow flex justify-between items-center"
+          id="main"
+          data-animate-in="fade"
+        >
+          <section class="w-full lg:w-2/3 mt-4">
             <p
-              class="text-5xl md:text-dfc-xl"
               style="
-                font-style: normal;
-                font-weight: 600;
-                line-height: 100%;
-                letter-spacing: -0.07em;
-              "
-            >
-              We craft
-              <span
-                id="grad-text"
-                data-animate-in="fade"
-                class="text-gradient-teal"
-                >digital products.</span
-              >
-            </p>
-            <p
-              class="text-5xl md:text-dfc-xl"
-              style="
-                font-style: normal;
-                font-weight: 600;
-                line-height: 100%;
-                letter-spacing: -0.07em;
-              "
-            >
-              Japanese style.
-            </p>
-            <p
-              class="mt-10 md:w-2/3 text-justify"
-              style="
+                border-left: 1px dashed #444444;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 20px;
-                line-height: 30px;
-                /* or 28px */
-
-                letter-spacing: -0.07em;
+                line-height: 130%;
+                /* or 31px */
               "
+              class="py-10 xl:py-16 border-l pl-4 text-justify text-xl xl:text-2xl"
             >
-              You get complete digital product, developed and driven by data,
-              research and cutting-edge technologies.
+              We are a tiny creative studio based in Montenegro. We specialize
+              in website development, UX/UI and digital design. We offer the
+              skills and experience of an agency without the overheads and
+              markup. We only take one client at a time.
             </p>
-          </section>
-          <section class="hidden md:block">
-            <ul class="space-y-7">
-              <li>
-                <a target="_blank" href="https://instagram.com/dafatcatstudio">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163V2.163ZM12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0ZM12 5.838C11.1908 5.838 10.3895 5.99739 9.6419 6.30705C8.8943 6.61672 8.215 7.07061 7.64281 7.64281C7.07061 8.215 6.61672 8.8943 6.30705 9.6419C5.99738 10.3895 5.838 11.1908 5.838 12C5.838 12.8092 5.99738 13.6105 6.30705 14.3581C6.61672 15.1057 7.07061 15.785 7.64281 16.3572C8.215 16.9294 8.8943 17.3833 9.6419 17.6929C10.3895 18.0026 11.1908 18.162 12 18.162C13.6343 18.162 15.2016 17.5128 16.3572 16.3572C17.5128 15.2016 18.162 13.6343 18.162 12C18.162 10.3657 17.5128 8.79841 16.3572 7.64281C15.2016 6.48721 13.6343 5.838 12 5.838V5.838ZM12 16C10.9391 16 9.92172 15.5786 9.17157 14.8284C8.42143 14.0783 8 13.0609 8 12C8 10.9391 8.42143 9.92172 9.17157 9.17157C9.92172 8.42143 10.9391 8 12 8C13.0609 8 14.0783 8.42143 14.8284 9.17157C15.5786 9.92172 16 10.9391 16 12C16 13.0609 15.5786 14.0783 14.8284 14.8284C14.0783 15.5786 13.0609 16 12 16ZM18.406 4.155C18.2168 4.155 18.0295 4.19226 17.8547 4.26465C17.68 4.33704 17.5212 4.44315 17.3874 4.57691C17.2537 4.71068 17.1475 4.86947 17.0752 5.04424C17.0028 5.21901 16.9655 5.40633 16.9655 5.5955C16.9655 5.78467 17.0028 5.97199 17.0752 6.14676C17.1475 6.32153 17.2537 6.48032 17.3874 6.61409C17.5212 6.74785 17.68 6.85396 17.8547 6.92635C18.0295 6.99874 18.2168 7.036 18.406 7.036C18.788 7.036 19.1544 6.88423 19.4246 6.61409C19.6947 6.34394 19.8465 5.97754 19.8465 5.5955C19.8465 5.21346 19.6947 4.84706 19.4246 4.57691C19.1544 4.30677 18.788 4.155 18.406 4.155V4.155Z"
-                      fill="#D8D8D8"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://linkedin.com/company/dafatcatstudio"
+            <div
+              class="md:flex md:justify-between items-center"
+              style="margin-top: 2px"
+            >
+              <div
+                style="border-left: 1px dashed #444444"
+                class="pl-4 space-y-8 py-10 xl:py-16"
+              >
+                <h3
+                  style="
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 108.1%;
+                    /* identical to box height, or 35px */
+
+                    letter-spacing: -0.07em;
+                  "
                 >
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M19 0L5 0C2.239 0 0 2.239 0 5L0 19C0 21.761 2.239 24 5 24H19C21.762 24 24 21.761 24 19V5C24 2.239 21.762 0 19 0ZM8 19H5V8H8V19ZM6.5 6.732C5.534 6.732 4.75 5.942 4.75 4.968C4.75 3.994 5.534 3.204 6.5 3.204C7.466 3.204 8.25 3.994 8.25 4.968C8.25 5.942 7.467 6.732 6.5 6.732ZM20 19H17V13.396C17 10.028 13 10.283 13 13.396V19H10V8H13V9.765C14.396 7.179 20 6.988 20 12.241V19Z"
-                      fill="#D8D8D8"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="https://twitter.com/dafatcatstudio">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0)">
-                      <path
-                        d="M24 4.55705C23.117 4.94905 22.168 5.21305 21.172 5.33205C22.189 4.72305 22.97 3.75805 23.337 2.60805C22.386 3.17205 21.332 3.58205 20.21 3.80305C19.313 2.84605 18.032 2.24805 16.616 2.24805C13.437 2.24805 11.101 5.21405 11.819 8.29305C7.728 8.08805 4.1 6.12805 1.671 3.14905C0.381 5.36205 1.002 8.25705 3.194 9.72305C2.388 9.69705 1.628 9.47605 0.965 9.10705C0.911 11.388 2.546 13.522 4.914 13.997C4.221 14.185 3.462 14.229 2.69 14.081C3.316 16.037 5.134 17.46 7.29 17.5C5.22 19.123 2.612 19.848 0 19.54C2.179 20.937 4.768 21.752 7.548 21.752C16.69 21.752 21.855 14.031 21.543 7.10605C22.505 6.41105 23.34 5.54405 24 4.55705V4.55705Z"
-                        fill="#D8D8D8"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0">
-                        <rect width="24" height="24" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </a>
-              </li>
-              <!-- Youtube -->
-              <!-- <li>
-                <a href="#">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9 8H6V12H9V24H14V12H17.642L18 8H14V6.333C14 5.378 14.192 5 15.115 5H18V0L14.192 0C10.596 0 9 1.583 9 4.615V8Z"
-                      fill="#D8D8D8"
-                    />
-                  </svg>
-                </a>
-              </li> -->
-              <!-- facebook -->
-              <!-- <li>
-                <a href="#">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M19.615 3.18413C16.011 2.93813 7.984 2.93913 4.385 3.18413C0.488 3.45013 0.029 5.80412 0 12.0001C0.029 18.1851 0.484 20.5491 4.385 20.8161C7.985 21.0611 16.011 21.0621 19.615 20.8161C23.512 20.5501 23.971 18.1961 24 12.0001C23.971 5.81512 23.516 3.45113 19.615 3.18413V3.18413ZM9 16.0001V8.00013L17 11.9931L9 16.0001Z"
-                      fill="#D8D8D8"
-                    />
-                  </svg>
-                </a>
-              </li> -->
-            </ul>
+                  Discover
+                </h3>
+                <ul style="">
+                  <li>Listen</li>
+                  <li>Question</li>
+                  <li>Collaborate</li>
+                  <li>Research</li>
+                  <li>Prototype</li>
+                </ul>
+              </div>
+
+              <div
+                style="border-left: 1px dashed #444444"
+                class="pl-4 space-y-8 py-10 xl:py-16"
+              >
+                <h3
+                  style="
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 108.1%;
+                    /* identical to box height, or 35px */
+
+                    letter-spacing: -0.07em;
+                  "
+                >
+                  Design
+                </h3>
+
+                <ul style="">
+                  <li>Digital</li>
+                  <li>UX / UI</li>
+                  <li>Print</li>
+                  <li>Motion</li>
+                  <li>Illustration</li>
+                </ul>
+              </div>
+
+              <div
+                style="border-left: 1px dashed #444444"
+                class="pl-4 space-y-8 py-10 xl:py-16"
+              >
+                <h3
+                  style="
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 108.1%;
+                    /* identical to box height, or 35px */
+
+                    letter-spacing: -0.07em;
+                  "
+                >
+                  Develop
+                </h3>
+                <ul style="">
+                  <li>Full-stack</li>
+                  <li>Accessibility</li>
+                  <li>Ecommerce</li>
+                  <li>SEO / QA</li>
+                  <li>Cloud Hosting</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="hidden lg:block">
+            <svg
+              id="topbox"
+              data-animate-in="fade"
+              class="ml-auto"
+              width="96"
+              height="96"
+              viewBox="0 0 96 96"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 32.34V95.0199M1 32.34H63.6932M1 32.34L32.3466 1M1 95.0199H63.6932M1 95.0199L32.3466 63.6799M63.6932 95.0199V32.34M63.6932 95.0199L95.0397 63.6799M63.6932 32.34L95.0397 1M95.0397 1V63.6799M95.0397 1H32.3466M32.3466 1V63.6799M32.3466 63.6799H95.0397"
+                stroke="#49C8FF"
+                stroke-width="1.3245"
+                stroke-miterlimit="2.3662"
+                stroke-linecap="round"
+                stroke-linejoin="bevel"
+                stroke-dasharray="4 4"
+              />
+            </svg>
+
+            <svg
+              id="threeboxes"
+              data-animate-in="fade"
+              width="190"
+              height="362"
+              viewBox="0 0 190 362"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 298.32V361M1 298.32H63.6932M1 298.32L32.3466 266.98M1 361H63.6932M1 361L32.3466 329.66M63.6932 361V298.32M63.6932 361L95.0397 329.66M63.6932 298.32L95.0397 266.98M95.0397 266.98V329.66M95.0397 266.98H32.3466M32.3466 266.98V329.66M32.3466 329.66H95.0397"
+                stroke="#49C8FF"
+                stroke-width="1.3245"
+                stroke-miterlimit="2.3662"
+                stroke-linecap="round"
+                stroke-linejoin="bevel"
+                stroke-dasharray="4 4"
+              />
+              <path
+                d="M95.0396 204.34V267.02M95.0396 204.34H32.3464M95.0396 204.34L63.693 173M95.0396 267.02H32.3464M95.0396 267.02L63.693 235.68M32.3464 267.02V204.34M32.3464 267.02L0.999815 235.68M32.3464 204.34L0.999815 173M0.999815 173V235.68M0.999815 173H63.693M63.693 173V235.68M63.693 235.68H0.999815"
+                stroke="#49C8FF"
+                stroke-width="1.34316"
+                stroke-miterlimit="2.3662"
+                stroke-linecap="round"
+                stroke-linejoin="bevel"
+                stroke-dasharray="4 4"
+              />
+              <path
+                d="M189 297.93V360.61M189 297.93H126.307M189 297.93L157.653 266.59M189 360.61H126.307M189 360.61L157.653 329.27M126.307 360.61V297.93M126.307 360.61L94.9603 329.27M126.307 297.93L94.9603 266.59M94.9603 266.59V329.27M94.9603 266.59H157.653M157.653 266.59V329.27M157.653 329.27H94.9603"
+                stroke="#49C8FF"
+                stroke-width="1.34316"
+                stroke-miterlimit="2.3662"
+                stroke-linecap="round"
+                stroke-linejoin="bevel"
+                stroke-dasharray="4 4"
+              />
+            </svg>
           </section>
         </main>
         <footer>
-          <div class="hidden md:flex justify-between items-end relative">
+          <div class="flex justify-between items-end mt-4">
+            <a href="#">hello@dafatcat.studio</a>
             <svg
-              id="box1"
-              data-animate-in="left"
-              class="absolute right-0"
+              class="hidden md:block"
               width="175"
               height="22"
               viewBox="0 0 175 22"
@@ -294,58 +312,12 @@
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M22 21.0976V0L43.0976 0V21.0976H22Z" fill="#A2998A" />
-            </svg>
-            <svg
-              id="box2"
-              data-animate-in="up"
-              class="absolute right-0"
-              width="175"
-              height="22"
-              viewBox="0 0 175 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
               <path d="M0 21.0976L0 0L21.0976 0V21.0976H0Z" fill="#007CA8" />
-            </svg>
-            <svg
-              id="box3"
-              data-animate-in="down"
-              class="absolute right-0"
-              width="175"
-              height="22"
-              viewBox="0 0 175 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
               <path d="M73 21.0976V0L94.0976 0V21.0976H73Z" fill="#FF3A5E" />
-            </svg>
-            <svg
-              id="box4"
-              data-animate-in="left"
-              class="absolute right-0"
-              width="175"
-              height="22"
-              viewBox="0 0 175 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
               <path d="M110 21.0976V0L131.098 0V21.0976H110Z" fill="#9E9888" />
-            </svg>
-            <svg
-              id="box5"
-              data-animate-in="up"
-              class="absolute right-0"
-              width="175"
-              height="22"
-              viewBox="0 0 175 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
               <path d="M153 21.0976V0L174.098 0V21.0976H153Z" fill="#FFEA7B" />
             </svg>
-            <a href="#">hello@dafatcat.studio</a>
           </div>
-          <a class="block md:hidden" href="#">hello@dafatcat.studio</a>
         </footer>
       </div>
     </div>
@@ -359,16 +331,23 @@ export default {
       const main = document.getElementById("main");
       main.classList.add("in-view");
     }, 300);
-
     setTimeout(() => {
-      const main = document.getElementById("comming-soon");
-      main.classList.add("in-view");
-    }, 500);
+      const back = document.getElementById("back");
+      back.classList.add("in-view");
+    }, 400);
+    setTimeout(() => {
+      const topbox = document.getElementById("topbox");
+      topbox.classList.add("in-view");
+    }, 600);
+    setTimeout(() => {
+      const threeboxes = document.getElementById("threeboxes");
+      threeboxes.classList.add("in-view");
+    }, 800);
   },
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 [data-animate-in] {
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
@@ -393,19 +372,5 @@ export default {
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transition: transform 0.6s ease, opacity 0.6s ease;
-}
-
-.bg-gradient {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: url("../assets/images/bg-gradient-2.svg") center/cover;
-}
-
-.center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 </style>
